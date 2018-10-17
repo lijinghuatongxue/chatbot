@@ -5,7 +5,7 @@ import jieba  # 分词库
 from wordcloud import WordCloud, ImageColorGenerator  # 词云库
 
 # 1、读入txt文本数据
-text = open(r'./src/demo.txt', "r").read()
+text = open(r'./src/test.txt', "r").read()
 
 # 2、结巴分词:cut_all参数可选, True为全模式，False为精确模式,默认精确模式
 cut_text = jieba.cut(text, cut_all=False)
