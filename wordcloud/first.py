@@ -4,8 +4,11 @@ import matplotlib.pyplot as plt  # 数学绘图库
 import jieba  # 分词库
 from wordcloud import WordCloud  # 词云库
 
+#import codecs
+#codecs.open('./src/file.txt',encoding='uft-8')
+
 # 1、读入txt文本数据
-text = open(r'./src/test.txt', "r").read()
+text = open(r'./src/file.txt', "r").read()
 
 # 2、结巴分词，默认精确模式。可以添加自定义词典userdict.txt,然后jieba.load_userdict(file_name) ,file_name为文件类对象或自定义词典的路径
 # 自定义词典格式和默认词库dict.txt一样，一个词占一行：每一行分三部分：词语、词频（可省略）、词性（可省略），用空格隔开，顺序不可颠倒
